@@ -1,0 +1,6 @@
+{
+  "name": "LumeOS - Minimalist Browser Desktop Environment",
+  "description": "A minimalist Chromium browser-based desktop environment and new tab extension with interactive 3D wallpapers, system widgets, file explorer, bio-research lab, and low-RAM web app multitasking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

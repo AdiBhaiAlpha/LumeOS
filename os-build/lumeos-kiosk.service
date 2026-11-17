@@ -1,0 +1,15 @@
+[Unit]
+Description=LumeOS Bare-Metal Desktop Shell
+After=systemd-user-sessions.service network.target sound.target
+
+[Service]
+Type=simple
+User=lume
+Environment=DISPLAY=:0
+Environment=LUMEOS_ISO=1
+ExecStart=/usr/bin/startx /opt/lumeos/launch-kiosk.sh -- -nocursor vt1
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
